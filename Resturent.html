@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Order</title>
+</head>
+<body>
+
+<h2>Restaurant Order Form</h2>
+
+<form>
+    <table border="1" >
+        
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+
+        <tr>
+            <td>Phone Number:</td>
+            <td><input type="text" name="phone"></td>
+        </tr>
+
+        <tr>
+            <td>Address:</td>
+            <td><input type="text" name="address"></td>
+        </tr>
+
+        <tr>
+            <td>Food Item:</td>
+            <td>
+                <select name="food">
+                    <option value="pizza">Pizza - 150</option>
+                    <option value="burger">Burger - 120</option>
+                    <option value="pasta">pasta- 80</option>
+                    <option value="Fruit salad">Fruit Salad - 60</option>
+                     <option value="Egg">Egg- 10</option>
+                      <option value="Lemon Rice">Lemon Rice - 90</option>
+                      <option value="Dum Biryani">Dum Biryani - 140</option>
+                      <option value="Veg Palav">Veg Palav - 110</option>
+                      <option value="Chicken Curry">Chicken Curry - 200</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Quantity:</td>
+            <td><input type="number" name="quantity" min="1" max="10"></td>
+        </tr>
+
+        <tr>
+            <td  colspan="2" align="center">
+                <input type="submit" value="Place Order">
+            </td>
+        </tr>
+
+    </table>
+</form>
+
+</body>
+</html>
