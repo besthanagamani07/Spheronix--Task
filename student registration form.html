@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f2f2f2;
+    }
+
+    h1{
+        text-align: center;
+        color: rgba(42, 231, 0, 0.8); 
+        font-family: fantasy;
+        font-weight: 900;
+        font-size: 28px; 
+        font-variant: small-caps;
+        margin-bottom: 20px;
+    }
+
+    form{
+        width: 350px;
+        margin: 50px auto;
+        background-color: rgb(118, 120, 120);
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    label{
+        font-weight: bold;
+    }
+
+    input, select, textarea{
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    input[type="radio"]{
+        width: auto;
+    }
+
+    input[type="submit"]{
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover{
+        background-color: darkgreen;
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<form>
+    <h1>Student Registration Form</h1>
+
+    <label>Name:</label>
+    <input type="text" name="name">
+
+    <label>Email:</label>
+    <input type="email" name="email">
+
+    <label>Password:</label>
+    <input type="password" name="password">
+
+    <label>Gender:</label>
+    <input type="radio" name="gender"> Female
+    <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Other
+
+    <label>Courses:</label>
+    <select>
+        <option>BTECH</option>
+        <option>BCOM</option>
+        <option>BSC</option>
+        <option>BCA</option>
+        <option>MBA</option>
+        <option>MCA</option>
+    </select>
+
+    <label>Message:</label>
+    <textarea rows="5" placeholder="Enter your message"></textarea>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
