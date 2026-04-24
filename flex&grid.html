@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hero Heroine Layout</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    h1{
+        text-align: center;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    body{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        font-family: Arial, sans-serif;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        width: 80%;
+        height: 70vh;
+        justify-content: center;
+        border: 15px solid rgb(0, 252, 46);
+        background-color: deeppink;
+        font-size: small;
+        font-weight: 100;
+        font-family: cursive;
+    }
+
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        border: 15px solid greenyellow;
+        text-align: center;
+        color: white;
+        border-radius: 20px;
+        transition: 0.3s;
+    }
+
+    .box:nth-child(1){
+        background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    }
+
+    .box:nth-child(2){
+        background: linear-gradient(135deg, #00c6ff, #0072ff);
+    }
+
+    .box:hover{
+        color: aliceblue;
+        transform: scale(1.05);
+    }
+
+</style>
+</head>
+<body>
+    <h1>Gallery Puzzle</h1>
+
+<div class="container">
+    <div class="box"> HERO</div>
+    <div class="box">HEROINE</div>
+</div>
+
+</body>
+</html>
